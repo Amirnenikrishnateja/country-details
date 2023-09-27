@@ -1,10 +1,16 @@
-import logo from './logo.svg';
+
+import { Link, useParams } from 'react-router-dom';
 import './App.css';
+import { Outlet } from 'react-router-dom';
+import Country from './countrydetails';
+
 
 function App() {
+  
   return (
-    <div className="App">
-      <h1>git</h1>
+    <div>
+    <Link to="/country">country</Link>
+    <Outlet></Outlet>
         </div>
   );
 }
